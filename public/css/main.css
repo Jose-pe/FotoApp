@@ -1,0 +1,56 @@
+
+#contenedor{
+    display: flex;
+    flex-direction:column;    
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+#tarjetas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0rem;
+    width: 100%;
+    height: 280rem;
+   align-items: center;
+    
+    
+}
+
+#contenedordescripcion{
+    background-color: #3c426d;
+    width: 100%;
+    color: cornsilk;
+    border: 1px solid #3EC487;
+    border-radius: 35px 15px;
+    padding: 0.9rem;
+}
+#usuario{
+    padding: 0.8rem;
+}
+#categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#foto{
+    
+    width: 100%;
+    max-width:100%; 
+}
+
+/*helpers BULMA */
+.card{    
+
+    background-color: #353958;    
+    width: 20rem;    
+    height: fit-content;
+    margin: 0.9rem; 
+    border: 2px solid #434cca;
+    
+}
+.card-content{
+    padding: 0.5rem;
+}
