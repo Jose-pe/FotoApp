@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/css/bulma/bulma.css" rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>FotoApp</title>
 </head>
 <body>  
@@ -16,7 +17,7 @@
                 <!-- Authentication Links -->
                 <li class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-success" href="/">Inicio</a>
+                        <a class="button is-success" href="/"> <i class="fas fa-home fa-lg"></i></a>
                     </div>
                     
                 </li>
@@ -40,24 +41,34 @@
                         </li>
                     @endif
                 @else
+                <li class="navbar-item">
+                    <div class="buttons">
+                    <a class="button is-primary is-light" href="{{route('foto.create')}}" role="button" >
+                        <i class="fas fa-image fa-lg"></i>
+                       
+                    </a>
+                    </div>
+                </li>
                     <li class="navbar-item">
                         <div class="buttons">
-                        <a class="button is-primary is-light" href="{{ route('home')}}"> Mi Perfil</a> 
+                        <a class="button is-primary is-light" href="{{ route('home')}}"> <i class="fas fa-user fa-lg">  </i></a> 
                         </div>
                     </li>
                     <li class="navbar-item">
                         <div class="buttons">
                         <a class="button is-primary is-light" href="#" role="button" >
-                           {{ Auth::user()->nickname }}
+                            <i class="fas fa-cog fa-lg"></i>
+                           
                         </a>
                         </div>
                     </li>
+                    
                         <li class="navbar-item">
                             
                             <a class="button is-primary is-light" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Logout .') }} <i class="fas fa-sign-out-alt fa-lg"></i>
                             </a>
                             
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

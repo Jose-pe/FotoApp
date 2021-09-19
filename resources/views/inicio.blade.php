@@ -3,8 +3,8 @@
 @section('contenido')
     
 <section>
-    <div class="section">
-            <h3 > HOLA ESTO ES FOTOAPP</h3>
+    <div class="section is-medium">
+            <h1 class="title is-1 is-spaced has-text-link"> HOLA, BIENVENIDOS A FOTOAPP</h1>
     </div>
 </section>
 <section class="container-fluid">
